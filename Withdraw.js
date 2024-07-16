@@ -1,14 +1,14 @@
 function withdraw (person, amount){
     if (amount > person.balance){
-        console.log ("You don't have enough money! Save some more money")
+        console.log ("Dear " + person.firstName + ", you don't have enough money! Save some more money!")
     }
     else {
         person.balance -= amount;
-        console.log ("Withdrawal done successfully!. Your balance now is:" + person.balance)
+        console.log ("Dear " + person.firstName + ", withdrawal was done successfully!. Your balance now is:" + person.balance)
     }
 };
 
-let personKlaudja = {
+var personKlaudja = {
     balance: 15000,
     firstName: 'Klaudja'
 };
